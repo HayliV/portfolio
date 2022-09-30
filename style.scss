@@ -1,0 +1,48 @@
+@use "./partials/palette";
+@use "./partials/typography";
+
+body {
+    background-image: url("background.png");
+    background-color: palette.$background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+
+    &__link {
+        background-color: palette.$dark-red;
+        border-radius: 30px;
+        font-family: typography.$primary-font;
+
+        :link {
+            color: palette.$background;
+            text-decoration: none;
+        }
+        :visited {
+            color: palette.$background;
+            text-decoration: none;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    &__hey {
+        font-size: 60px;
+        font-family: typography.$primary-font;
+        color: palette.$bright-orange;
+    }
+
+    &__sub {
+        font-family: typography.$primary-font;
+        color: palette.$dark-red;
+    }
+}

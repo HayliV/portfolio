@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+body {
+  background-image: url("background.png");
+  background-color: #f4c688;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.navbar__link {
+  background-color: #872f1b;
+  border-radius: 30px;
+  font-family: Audiowide, cursive;
+}
+.navbar__link :link {
+  color: #f4c688;
+  text-decoration: none;
+}
+.navbar__link :visited {
+  color: #f4c688;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title__hey {
+  font-size: 60px;
+  font-family: Audiowide, cursive;
+  color: #c45036;
+}
+.title__sub {
+  font-family: Audiowide, cursive;
+  color: #872f1b;
+}
