@@ -1,3 +1,13 @@
-.about-title {
-    @extend .title__hey;
+@use "./partials/mixins";
+@use "./partials/palette";
+@use "./partials/typography";
+
+.about {
+    &__title {
+        @include mixins.title-styling;
+    }
+
+    &__para {
+        @include mixins.text-styling;
+    }
 }
