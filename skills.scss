@@ -1,0 +1,70 @@
+@use "./partials/mixins";
+@use "./partials/palette";
+@use "./partials/typography";
+
+body {
+    font-family: typography.$primary-font;
+    font-size: 16px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.container {
+    height: 800px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.skills {
+    display: flex;
+    border-radius: 10px;
+
+    &__html {
+        display: flex;
+        align-items: center;
+        // create mixin for same styling? or extend?
+        &__header {
+            box-shadow: 0 3px 5px palette.$darkest-red;
+            background-color: palette.$darkest-red;
+            color: palette.$bright-orange;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+    &__scss {
+        display: flex;
+        align-items: center;
+
+        &__header {
+            box-shadow: 0 3px 5px palette.$darkest-red;
+            background-color: palette.$darkest-red;
+            color: palette.$bright-orange;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+    &__css {
+        display: flex;
+        align-items: center;
+
+        &__header {
+            box-shadow: 0 3px 5px palette.$darkest-red;
+            background-color: palette.$darkest-red;
+            color: palette.$bright-orange;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+}
+
+.skills i {
+    margin-right: 10px;
+    color: palette.$light-orange;
+}
