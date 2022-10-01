@@ -1,5 +1,6 @@
 @use "./partials/palette";
 @use "./partials/typography";
+@use "./partials/mixins";
 
 body {
     background-image: url("background.png");
@@ -77,5 +78,37 @@ body {
     &__sub {
         font-family: typography.$primary-font;
         color: palette.$dark-red;
+    }
+}
+
+.image {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.photo {
+    height: 250px;
+    weight: 250px;
+    border: 5px solid palette.$medium-orange;
+    border-radius: 40%;
+}
+
+footer {
+}
+
+.acknowledgement {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    &__text {
+        display: flex;
+        align-self: center;
+        text-align: center;
+        width: 900px;
+        @include mixins.text-styling($font-size: 15px);
     }
 }

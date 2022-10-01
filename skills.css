@@ -10,7 +10,7 @@ h2 {
 
 .container {
   height: 800px;
-  max-width: 1100px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 30px;
   display: flex;
@@ -24,7 +24,7 @@ h2 {
 }
 .skills__html {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .skills__html__header {
   box-shadow: 0 3px 5px #672613;
@@ -35,7 +35,7 @@ h2 {
 }
 .skills__scss {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .skills__scss__header {
   box-shadow: 0 3px 5px #672613;
@@ -46,7 +46,7 @@ h2 {
 }
 .skills__css {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .skills__css__header {
   box-shadow: 0 3px 5px #672613;
@@ -59,4 +59,15 @@ h2 {
 .skills i {
   margin-right: 10px;
   color: #ef904f;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading__title {
+  font-size: 60px;
+  font-family: Audiowide, cursive;
+  color: #c45036;
 }
