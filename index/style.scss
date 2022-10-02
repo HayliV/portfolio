@@ -3,7 +3,7 @@
 @use "./partials/mixins";
 
 body {
-    background-image: url("background.png");
+    background-image: url("../images/background.png");
     background-color: palette.$background;
     background-size: cover;
     background-repeat: no-repeat;

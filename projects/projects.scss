@@ -1,0 +1,82 @@
+@use "../partials/mixins";
+@use "../partials/palette";
+@use "../partials/typography";
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 60px;
+        font-family: typography.$primary-font;
+        color: palette.$bright-orange;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+}
+.projects {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: 0;
+}
+
+.calculator {
+    &__img {
+        background-color: palette.$bright-orange;
+        padding: 10px;
+        border-radius: 10px;
+        height: 200px;
+        width: 150px;
+    }
+
+    &__title {
+        @include mixins.text-styling;
+    }
+}
+
+.eshop {
+    &__img {
+        height: 200px;
+        width: 150px;
+        background-color: palette.$bright-orange;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    &__title {
+        @include mixins.text-styling;
+    }
+}
+
+.morse-translator {
+    &__img {
+        height: 200px;
+        width: 150px;
+        background-color: palette.$bright-orange;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    &__title {
+        @include mixins.text-styling;
+    }
+}
+
+.google-books {
+    &__img {
+        height: 200px;
+        width: 150px;
+        background-color: palette.$bright-orange;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    &__title {
+        @include mixins.text-styling;
+    }
+}
