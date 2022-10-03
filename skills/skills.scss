@@ -1,6 +1,6 @@
-@use "./partials/mixins";
-@use "./partials/palette";
-@use "./partials/typography";
+@use "../partials/mixins";
+@use "../partials/palette";
+@use "../partials/typography";
 
 body {
     font-family: typography.$primary-font;
@@ -12,13 +12,13 @@ h2 {
 }
 
 .container {
-    height: 800px;
+    height: 400px;
     max-width: 600px;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -78,5 +78,11 @@ h2 {
         font-size: 60px;
         font-family: typography.$primary-font;
         color: palette.$bright-orange;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar__link {
+        padding: 5px;
     }
 }

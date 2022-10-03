@@ -3,7 +3,7 @@
 @use "../partials/mixins";
 
 body {
-    background-image: url("../images/background.png");
+    //     background-image: url("../images/background.png");
     background-color: palette.$background;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,9 +17,11 @@ body {
     &__box {
         max-width: 1100px;
         margin: 0 auto;
-
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        height: 4rem;
     }
 
     &__list {
@@ -69,6 +71,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
 
     &__hey {
         font-size: 60px;
@@ -90,8 +95,8 @@ body {
 .photo {
     height: 250px;
     width: 250px;
-    border: 5px solid palette.$medium-orange;
-    border-radius: 40%;
+    border: 7px solid palette.$dark-red;
+    border-radius: 30%;
 }
 
 .acknowledgement {
@@ -100,13 +105,48 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 
     &__text {
         display: flex;
-        align-self: center;
+        align-self: flex-end;
         text-align: center;
         width: 900px;
         @include mixins.text-styling($font-size: 15px);
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    body {
+        background-image: url("../images/background-laptop.png");
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url("../images/background.png");
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url("../images/background-mobile.png");
+        overflow: scroll;
+    }
+
+    .acknowledgement {
+        &__text {
+            color: palette.$background;
+            text-shadow: 2px 2px palette.$darkest-red;
+            align-self: center;
+        }
+    }
+
+    .navbar__link {
+        padding: 5px;
+    }
+
+    .title__hey {
+        text-align: center;
     }
 }

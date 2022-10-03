@@ -7,3 +7,90 @@
         @include mixins.title-styling;
     }
 }
+
+.container {
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+
+    &__text {
+        @include mixins.text-styling;
+    }
+
+    &__mail {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    &__github {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    &__linkin {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        @include mixins.text-styling;
+    }
+}
+
+.links i {
+    color: palette.$dark-red;
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: none;
+        overflow: scroll;
+    }
+
+    .navbar__link {
+        padding: 5px;
+    }
+
+    .links {
+        flex-direction: column;
+
+        &__mail {
+            padding: 0rem;
+            margin: 0rem;
+        }
+
+        &__linkin {
+            padding: 0rem;
+            margin: 0rem;
+        }
+
+        &__github {
+            padding: 0rem;
+            margin: 0rem;
+        }
+    }
+}
