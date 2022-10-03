@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .navbar__box {
@@ -55,7 +56,7 @@ body {
 
 .photo {
     height: 250px;
-    weight: 250px;
+    width: 250px;
     border: 5px solid #db6c44;
     border-radius: 40%;
 }

@@ -1,6 +1,6 @@
-@use "./partials/palette";
-@use "./partials/typography";
-@use "./partials/mixins";
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../partials/mixins";
 
 body {
     background-image: url("../images/background.png");
@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 // testing new navbar styling
@@ -88,12 +89,9 @@ body {
 }
 .photo {
     height: 250px;
-    weight: 250px;
+    width: 250px;
     border: 5px solid palette.$medium-orange;
     border-radius: 40%;
-}
-
-footer {
 }
 
 .acknowledgement {

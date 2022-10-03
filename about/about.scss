@@ -1,6 +1,6 @@
-@use "./partials/mixins";
-@use "./partials/palette";
-@use "./partials/typography";
+@use "../partials/mixins";
+@use "../partials/palette";
+@use "../partials/typography";
 
 .about {
     &__title {
@@ -9,5 +9,40 @@
 
     &__para {
         @include mixins.text-styling;
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+
+    &__chicken {
+        padding: 10px;
+        &__img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            border: 5px solid palette.$medium-orange;
+        }
+    }
+
+    &__veggies {
+        padding: 10px;
+        &__img {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            border: 5px solid palette.$medium-orange;
+        }
+    }
+
+    &__cradle {
+        padding: 10px;
+        &__img {
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            border: 5px solid palette.$medium-orange;
+        }
     }
 }
